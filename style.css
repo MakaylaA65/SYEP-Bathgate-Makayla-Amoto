@@ -29,7 +29,7 @@ body{
 }
 
 .grid div{
-    background-color:deeppink;
+    background-color:rgb(241, 89, 122);
     padding: 20px;
     border-radius:40px;
 }
