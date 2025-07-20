@@ -1,3 +1,4 @@
+overflow-x: hidden;
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body{
-    background-color:rgb(252, 140, 196);
+    background-color:rgb(252, 140, 174);
     color: #333;
     text-align: center;
     line-height: 3;
@@ -29,7 +30,120 @@ body{
 }
 
 .grid div{
-    background-color:rgb(241, 89, 122);
+    background-color:rgb(245, 81, 116);
     padding: 20px;
     border-radius:40px;
+}
+
+.navbar {
+display:flex;
+justify-content:center;
+gap:30px;
+background-color: rgb(248, 107, 142);
+border-bottom: 3px solid #ffffff;
+padding: 15px 0;
+font-family: Arial,sans-serif;
+}
+
+.navbar a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+color: #fff9fb;
+}
+
+.intro {
+  height: 100vh;
+  background: url('IMG_8524.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white box */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.text-box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media screen and (max-width: 600px) {
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+    margin: 0 0 20px 0;
+  }
+
+  .text-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-box p {
+    font-size: 1rem;
+  }
+}/
+
+@media screen and (max-width: 600px) {
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+    margin: 0 0 20px 0;
+  }
+
+  .text-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-box p {
+    font-size: 1rem;
+  }
 }
