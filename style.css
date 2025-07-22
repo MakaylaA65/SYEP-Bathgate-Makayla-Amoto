@@ -6,7 +6,7 @@ overflow-x: hidden;
 }
 
 body{
-    background-color:rgb(252, 140, 174);
+    background-color:rgb(254, 174, 198);
     color: #333;
     text-align: center;
     line-height: 3;
@@ -30,40 +30,11 @@ body{
 }
 
 .grid div{
-    background-color:rgb(245, 81, 116);
+    background-color:rgb(250, 142, 165);
     padding: 20px;
     border-radius:40px;
 }
 
-.navbar {
-display:flex;
-justify-content:center;
-gap:30px;
-background-color: rgb(248, 107, 142);
-border-bottom: 3px solid #ffffff;
-padding: 15px 0;
-font-family: Arial,sans-serif;
-}
-
-.navbar a {
-text-decoration: none;
-color: #333;
-font-weight: bold;
-transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-color: #fff9fb;
-}
-
-.intro {
-  height: 100vh;
-  background: url('IMG_8524.jpg') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 2s ease-in;
-}
 
 .intro-content {
   display: flex;
@@ -102,48 +73,11 @@ color: #fff9fb;
     transform: translateY(0);
   }
 
-  @media screen and (max-width: 600px) {
-  .intro-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
+@media screen (max-width:768px){
+  .hero h1{font: size 40px;}
+}
 
-  .profile-pic {
-    width: 130px;
-    height: 130px;
-    margin: 0 0 20px 0;
-  }
-
-  .text-box h1 {
-    font-size: 1.5rem;
-  }
-
-  .text-box p {
-    font-size: 1rem;
-  }
-}/
-
-@media screen and (max-width: 600px) {
-  .intro-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .profile-pic {
-    width: 130px;
-    height: 130px;
-    margin: 0 0 20px 0;
-  }
-
-  .text-box h1 {
-    font-size: 1.5rem;
-  }
-
-  .text-box p {
-    font-size: 1rem;
-  }
+.hero-text{
+  display:flex;
+  flex-direction: column;
 }
