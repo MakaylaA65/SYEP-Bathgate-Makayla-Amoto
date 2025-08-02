@@ -38,3 +38,4 @@ if (hour<12){
 }
 
 document.getElementById("greeting").innerText = greeting;
+

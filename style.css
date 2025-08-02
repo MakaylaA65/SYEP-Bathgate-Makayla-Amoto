@@ -5,11 +5,67 @@ overflow-x: hidden;
     box-sizing: border-box;
 }
 
-body{
-    background-color:#fcaab8;
-    color: #000000;
-    text-align: center;
-    line-height: 3;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffc9de;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ff85c0;
+  color: white;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: #d63384;
+}
+
+.projects {
+  background-color: #fff5f9;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.project {
+  border-left: 5px solid #ffadd2;
+  padding-left: 1rem;
+}
+
+.contact a {
+  color: #c41d7f;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #ff85c0;
+}
+
+.bg-pink {
+  background-color: #ff85c0 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffd6e7;
 }
 
 .section{
@@ -24,34 +80,13 @@ body{
     font-size: 32px;
 }
 
-.grid {
-    display:grid;
-    gap: 10px;
-}
-
-.profile-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px auto;
-  max-width: 700px;
-}
-
-.profile-text {
-  flex: 1;
-  padding-right: 20px;
-  color: rgb(0, 0, 0);
-  font-family: 'Cambria',sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
-}
 
 .profile-image img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%; 
+  border-color: #ffffff;
 }
 
  @media (max-width: 1024px) {
@@ -79,86 +114,102 @@ body{
   }
 }
 
-.skills-section {
-  background-color: #ffa4b4;
-  padding: 40px 20px;
-  color: #55192D;
-}
 
-.section {
-  margin: 40px auto;
-  max-width: 600px;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.box {
-  background-color: #f8a6bd;
-  border-radius: 10px;
-  padding: 20px;
-  color: white;
-}
-
-.box ul {
-  list-style-type: circle;
-  padding-left: 20px;
-}
-
-.box li {
-  margin: 10px 0;
-  font-weight: bold;
-}
-
-.section-title {
-  font-family: 'Pacifico', cursive;
-}
-
-.box {
-  background-color: #fc7fa3;
-  border-radius: 10px;
-  padding: 20px;
-  color: white;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffc9de;
+  color: #333;
   line-height: 1.6;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  
-
- 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.section-title {
-  font-family: 'Lobster', cursive;
-  color: #fd426a;
-}
-
-.badge {
-  font-family: 'Cambria', sans-serif;
-  font-size: 24px;
+header {
+  background-color: #ff85c0;
   color: white;
-  background-color: #ff6e7a; 
-  border: 3px solid #ff6e7a
-  .margin-bottom: 20px;
-  padding: 10px 30px;
-  border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  padding: 2rem;
 }
 
-.box {
-  font-family: 'Arial', sans-serif; 
-  font-weight: bold;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-.project-section {
-  background-color: #ffaaba;
+header p {
+  font-size: 1.2rem;
 }
-  
 
-  
+h2 {
+  color: #fd379a;
 
+}
+
+.projects {
+  background-color: #ffe3ed;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.bg-lightpink {
+  background-color: #fff5f9;
+}
+
+.project {
+  border-left: 5px solid #ffadd2;
+  padding-left: 1rem;
+}
+
+.contact a {
+  color: #c41d7f;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #ff85c0;
+}
+
+.bg-pink {
+  background-color: #ff85c0 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffd6e7;
+}
+
+h3 {
+  font-family: Lobster;
+  color: #f33092;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;     
+  display: block;
+  margin: 1rem auto;     
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeInBody 1s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}

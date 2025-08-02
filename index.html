@@ -3,58 +3,52 @@
 
 <head>
     <meta charset = "UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makayla's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
    <link href="style.css" rel="stylesheet">
   </head>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Makayla Amoto</a>
-    <p id="greeting"></p>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="#about">About Me</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#projects">Projects</a>
-         <a class="nav-link" href="#contact">Contact Me</a>
-    </div>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-pink sticky-top">
+<div class="container">
+<a class="navbar-brand" href="#">Makayla Amoto</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+  <span id="greeting" class="navbar-text text-white ms-3"></span>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
-</head 
 
-<!-- This is where most of my code will live -->
-
-
-<section id="home" class="hero container-fluid d-flex flex-lg-row-column align-items-center">
- <div class="profile-section">
-  <div class="profile-text">
-    <h1>Heyy, my name is Makayla Amoto!</h1>
-    <p>I am a freshman who walks through life with God by my side.</p>
-  </div>
-  <div class="profile-image">
+ <header class="text-center py-5">
+    <h1>Hello, I'm Makayla Amoto!</h1>
+    <p>Freshman • Kind • Booklover </p>
+    <div class="profile-image">
     <img src="IMG_8166.jpg">
   </div>
-</div>
-</section>
+  </header>
 
-    <section id="about" class="about-section">
-      <div class="badge">About Me</div>
-        <div class="box"
-</p> My favorite color is pink. I'm not a sports person, but one of my favorite sports I like to play is badminnton. Out of all my hobbies, one of my favorite is to read because it helps me relax. It's also more intresting when I watch a show and they make a book about it before like the book "The Summer I turned Pretty". Since I was a kid, I always had the passion to help people, which is why I want to become a medical doctor. I also have a kind personality, which a lot of people like about me.
-    </section>
 
-    <section id="skills" class="skills-section"
-  <div class="section">
-    <div class="badge">Skills</div>
-    <h2 class="section-title">Coding Skills</h2>
-    <div class="box">
+<!-- This is where most of my code will live -->
+  
+
+    <section id="about" class="about container py-4">
+    <h2>About Me</h2>
+    <p>My favorite color is pink. I'm not a sports person, but one of my favorite sports I like to play is badminnton. Out of all my hobbies, one of my favorite is to read because it helps me relax. It's also more intresting when I watch a show and they make a book about it before like the book "The Summer I turned Pretty". Since I was a kid, I always had the passion to help people, which is why I want to become a medical doctor. I also have a kind personality, which a lot of people like about me.</p>
+  </section>
+
+    <section id="skills" class="projects container py-4">
+    <h2>Skills</h2>
+    <div class="skills mb-3">
+      <h3>Coding Skills</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -76,32 +70,28 @@
   </div>
 </section>
 
-<section id="projects" class="project-section">
-      <div class="badge">Projects</div>
-        <div class="box"
-        <ul>
-          <li>Creating this Website</li>
-        </ul>
-      </section>
+<section id="projects" class="projects bg-lightpink container py-4 my-5">
+    <h2>Projects</h2>
+    <p>This website which I feel very proud of since it is the first website I have ever made.</p>
+  </section>
 
 
- <div class="section" id="contact">
-      <div class="badge">Contact Me</div>
-      <div class="box"
-      <ul>
-        <li>Email: amotomakayla@gmail.com</li>
-        <li>Phone Number: 973-836-3671</li>
-    
-      </ul>
-    </div>
-  </div>
-</section>
+
+ <section id="contact" class="projects bg-lightpink container py-4 my-5">
+    <h2>Contact Me</h2>
+    <p>Email: amotomakayla@gmail.com</p>
+    <p>Phone Number: 973-836-3671</p>
+  </section>
+
+
+<footer class="text-center text-white py-3 bg-pink">
+    <p>&copy; 2025 Makayla Amoto. All rights reserved.</p>
+  </footer>
+
 
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
-
-
 
 </html>
