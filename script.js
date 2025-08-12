@@ -1,26 +1,26 @@
 const reviews = [
 {
     id: 1,
-    name: 'susan smith',
-    job:'web developer',
-    img: 'IMG_8166.jpg',
-    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Shira Collado',
+    job:'Humanities Teacher',
+    img: 'Collado Pic for Testimonial.png',
+    text:'I’ve known Makayla for three years and watched her grow into a dedicated, diligent, and determined young leader. She consistently pushes herself to excel academically, supports those around her, and develops her skills through activities like the DIY club. Her intrinsic motivation and collaborative spirit make her an asset to any group or organization.'
 },
 
 {
     id: 2,
-    name: 'anna johnson',
-    job:'web designer',
-    img: '#',
-    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Didnorha Franco',
+    job:'Algebra 1 Teacher',
+    img: 'image.png',
+    text:'Makayla’s website is organized, easy to follow, and beautifully designed with calming colors and fonts. It reflects her thoughtful, creative personality and even reveals her love for books, adding a personal touch. Her blend of skill, creativity, and kindness makes her someone anyone would be lucky to work with.',
 },
 
 {
     id: 3,
-    name: 'peter jones',
-    job:'intern',
-    img: '#',
-    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: 'Aminata Sako',
+    job:'peer',
+    img: 'IMG_8741.jpg',
+    text:'Makayla is a thoughtful person willing to help others around her. She knows what shes doing and I would recomend her if you need a web designer.',
 },
 ];
 
@@ -30,20 +30,17 @@ const author = document.getElementById('author');
 const job = document.getElementById('job');
 const info = document.getElementById('info');
 
-const prevBtn = document.querySelector('.prev.btn');
-const nextBtn = document.querySelector('.next.btn');
+const prevBtn = document.querySelector('.prev-btn'); // make sure HTML uses .prev-btn
+const nextBtn = document.querySelector('.next-btn'); // make sure HTML uses .next-btn
 
 let currentItem = 0;
 
-window.addEventListener('DOMContentLoaded', function(){
-    const item = reviews[currentItem];
-    img.src = item.img;
-    author.textContent = item.name;
-    job.textContent = item.job;
-    info.textContent = item.text;
+// load initial item
+window.addEventListener('DOMContentLoaded', function () {
+    showPerson(currentItem);
 });
 
-function showPerson(person){
+function showPerson(person) {
     const item = reviews[person];
     img.src = item.img;
     author.textContent = item.name;
@@ -51,23 +48,23 @@ function showPerson(person){
     info.textContent = item.text;
 }
 
-nextBtn.addEventListener('click', function (){
+// show next person
+nextBtn.addEventListener('click', function () {
     currentItem++;
     if (currentItem > reviews.length - 1) {
-        currentItem = 0;
-    }  
-    showPerson(currentItem);
-});
-
-nextBtn.addEventListener('click', function (){
-    currentItem--;
-    if (currentItem < 0) {
-        currentItem = reviews.length
         currentItem = 0;
     }
     showPerson(currentItem);
 });
 
+// show previous person
+prevBtn.addEventListener('click', function () {
+    currentItem--;
+    if (currentItem < 0) {
+        currentItem = reviews.length - 1;
+    }
+    showPerson(currentItem);
+});
 
 
 
