@@ -221,6 +221,8 @@ h2 {
 }
 
 h1 {
+  font-family: Lobster;
+  
   text-align: center; /* centers the text horizontally */
 }
 
